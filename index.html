@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Трекер Еко-Звичок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img class="logo" src="logo.svg" alt="Eco Habits Logo">
+        <h1>Еко-Звички: Щоденний Виклик</h1>
+        <div id="login-screen">
+            <h2>Увійти або Зареєструватися</h2>
+            <input type="text" id="username" placeholder="Ім'я користувача">
+            <input type="password" id="password" placeholder="Пароль">
+            <button id="login-btn">Увійти</button>
+            <button id="signup-btn">Зареєструватися</button>
+            <p id="login-message"></p>
+        </div>
+        <div id="main-app" style="display:none;">
+        <div id="profile">
+            <input id="username-input" type="text" placeholder="Введіть ім'я користувача">
+            <button id="create-avatar-btn" disabled>Створити Аватар</button>
+            <div id="avatar-box" class="hidden">
+                <div id="avatar-circle"></div>
+                <p id="player-name"></p>
+            </div>
+            <button id="show-leaderboard-btn" class="hidden">Показати Таблицю Лідерів</button>
+        </div>
+        <div id="task-display">
+            <p id="task-text">Завантаження завдання...</p>
+            <button id="complete-btn">Позначити як Виконане</button>
+            <button id="reset-btn">Скинути Рахунок</button>
+        </div>
+        <div id="points-display">
+            <p>Очки: <span id="points">0</span></p>
+        </div>
+        <div id="shop">
+            <h2>Еко Магазин</h2>
+            <div class="shop-item">
+                <div>
+                    <strong>Авто Клікер</strong>
+                    <p>Автоматично заробляє 5 очок кожні 3 секунди.</p>
+                    <p>Володіє: <span id="auto-clicker-count">0</span></p>
+                    <p>Вартість: <span id="auto-clicker-cost">100</span> очок</p>
+                </div>
+                <button id="buy-auto-clicker">Купити Авто Клікер</button>
+            </div>
+            <button id="play-minigame">Грати в Мінігру</button>
+            <button id="play-mario-platformer">Грати в Маріо Платформер</button>
+            <button id="take-quiz">Пройти Вікторину</button>
+        </div>
+        <div id="leaderboard-panel" class="hidden">
+            <h2>Таблиця Лідерів</h2>
+            <ul id="leaderboard-list"></ul>
+            <button id="hide-leaderboard-btn">Сховати Таблицю Лідерів</button>
+        </div>
+        <div id="impact-explanation">
+            <h2>Як Це Зменшує Відходи</h2>
+            <p id="impact-text">Пояснення з'явиться тут.</p>
+        </div>
+        </div>
+    </div>
+    <div id="completion-animation">Завдання Виконане!</div>
+    <script src="script.js"></script>
+</body>
+</html>
