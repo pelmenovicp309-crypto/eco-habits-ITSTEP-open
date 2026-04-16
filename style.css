@@ -1,0 +1,205 @@
+body {
+    font-family: 'Courier New', monospace;
+    background: #808080;
+    background-image: 
+        radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0);
+    background-size: 4px 4px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0;
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 120px;
+    max-width: 100%;
+}
+
+#login-screen {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+#login-screen input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login-screen button {
+    margin: 5px;
+}
+
+#login-message {
+    color: red;
+    margin-top: 10px;
+}
+
+button {
+    background: linear-gradient(45deg, #ff4500, #ffa500);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #e63900, #ff8c00);
+}
+
+#reset-btn {
+    background: linear-gradient(45deg, #ff0000, #cc0000);
+    margin-left: 10px;
+}
+
+#reset-btn:hover {
+    background: linear-gradient(45deg, #cc0000, #990000);
+}
+
+#shop {
+    text-align: left;
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px dashed #7da87b;
+    border-radius: 10px;
+    background: rgba(240, 255, 240, 0.95);
+}
+
+#shop h2 {
+    margin-top: 0;
+    color: #2f7a32;
+}
+
+#profile {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+#username-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    min-width: 220px;
+}
+
+#avatar-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#avatar-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: #4caf50;
+}
+
+#player-name {
+    margin: 0;
+    font-size: 16px;
+    color: #2f7a32;
+}
+
+#leaderboard-panel {
+    margin-top: 20px;
+    padding: 15px;
+    border: 2px dashed #4a7f34;
+    border-radius: 10px;
+    background: rgba(240, 255, 240, 0.95);
+    text-align: left;
+}
+
+#leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+#leaderboard-list li {
+    padding: 8px;
+    border-bottom: 1px solid #c7e5c7;
+}
+
+.hidden {
+    display: none;
+}
+
+.shop-item {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    border: 1px solid #c7e5c7;
+}
+
+.shop-item button {
+    margin: 0;
+}
+
+#play-minigame {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#play-mario-platformer {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#take-quiz {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#completion-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: yellow;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 1000;
+}
+
+#completion-animation.show {
+    animation: celebrate 2s ease-out forwards;
+}
+
+@keyframes celebrate {
+    0% { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+    50% { opacity: 1; transform: translate(-50%, -50%) scale(1.2); }
+    100% { opacity: 0; transform: translate(-50%, -50%) scale(1); }
+}
