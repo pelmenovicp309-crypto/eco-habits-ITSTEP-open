@@ -5,3 +5,5 @@ this has some 🎮
 it is an app
 that for the nature **its ukranian**
 credit to @pelmenovicp309-crypto
+()НЕЧІПАЙТЕ()
+
